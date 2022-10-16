@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: service-corn
+  profiles: local
+
+server:
+  port: 8083
+
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false

@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: gateway
+
+server:
+  port: 8080
+
+zuul:
+  routes:
+    apple:
+      path: /apple/**
+      url: http://localhost:8081/apple
+    banana:
+      path: /banana/**
+      url: http://localhost:8082/banana
+    corn:
+      path: /corn/**
+      url: http://localhost:8083/corn

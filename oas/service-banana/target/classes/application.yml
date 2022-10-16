@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: service-banana
+  profiles: local
+
+server:
+  port: 8082
+
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
